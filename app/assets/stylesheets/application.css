@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+ .unlock-img {
+    width: 20px;
+    height: 20px;
+ }
+
+ .navbar-text {
+    color: #22543d;
+    background-color: #9ae6b4;
+ }
+
+ .navbar-border {
+    border-color: #6c757d; 
+ }
