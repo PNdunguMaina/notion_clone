@@ -8,15 +8,16 @@ const createHeader1Element = (header) => {
   const h1 = document.createElement('h1');
   h1.setAttribute('name', 'input');
   h1.textContent = header;
-  mainContainer.insertBefore(h1, inputContainer.nextSibling);
+  mainContainer.insertBefore(h1, inputContainer);
 };
 
 // create paragraph text element
 const createParagraphElement = (text) => {
   const p = document.createElement('p');
   p.setAttribute('name', 'input');
+  p.classList.add('paragraph');
   p.textContent = text;
-  mainContainer.insertBefore(p, inputContainer.nextSibling.nextSibling);
+  mainContainer.insertBefore(p, inputContainer);
 };
 
 const displayOptions = (cmd) => {
@@ -61,23 +62,25 @@ inputText.addEventListener('input', (e) => {
   displayOptions(e.target.value);
 
   // toggle options block depending on input
-  if (creator.value === '/') {
+  if (inputText.value === '/') {
     const model = document.createElement('div');
     model.classList.add('model');
     model.innerHTML = `
-      <div class="model-content shadow-2xl w-2/5">
-        <div class="flex items-center space-x-4">
-          <img src="assets/text.png" class="opacity-60 w-16 h-16">
-          <div class="model-header">
-            <h1 class="text-2xl font-bold">Heading 1</h1>
-            <p class="model-close opacity-70">Type 1 to create a header</p>
+      <div class="model-content shadow-lg w-4/5">
+        <div class="d-flex align-items-center gap-2 justify-content-center">
+          <img src="assets/text.png" class="text-img opacity-60 border border-dotted">
+          <div class="modal-header">
+            <h1 class="fs-2 fw-bold">Heading 1</h1>
+            <p class="modal-close opacity-70">Type 1 to create a header</p>
           </div>
         </div>
-        <div class="flex items-center space-x-4 mt-2">
-          <img src="assets/text.png" class="opacity-60 w-16 h-16">
-          <div class="model-header">
-            <h1 class="text-2xl font-bold">Text 1</h1>
-            <p class="model-close opacity-70">Type +1 to create a text</p>
+        <hr />
+        <div class="d-flex align-items-center gap-2
+         mt-2">
+          <img src="assets/text.png" class="opacity-60 text-img border border-dotted">
+          <div class="modal-header">
+            <h1 class="fs-2 fw-bold">Text 1</h1>
+            <p class="modal-close opacity-70">Type +1 to create a text</p>
           </div>
         </div>
       </div>

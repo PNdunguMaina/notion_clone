@@ -1,15 +1,14 @@
-<!-- explanation and where the user can create header -->
-<div class="flex flex-col items-center justify-center mt-6">
+<section class="d-flex flex-column align-items-center justify-content-center mt-5">
   <div class="w-7/12">
     <header>
-      <h1 class="border-b-2 text-4xl font-extrabold pb-6">Front-end developer test project</h1>
-      <p class="mt-6 text-gray-600 font-medium">Your goal is to make a page that looks exactly this one, and has the ability to create H1 text simply by typing / then 1, then typing text, and hitting enter.</p>
+      <h1 class="border-bottom border-2 fs-1 fw-bold pb-3">Front-end developer test project</h1>
+      <p class="main-txt mt-3 fw-medium">Your goal is to make a page that looks exactly this one, and has the ability to create H1 text simply by typing / then 1, then typing text, and hitting enter.</p>
     </header>
   </div>
-  <section id="container-wrapper" class="flex flex-col justify-center mt-6 w-7/12">
-    <div id="container" class="input-container w-full">
-      <input id="text-input" type="text" placeholder="Type /1 followed by text..." autofocus>
+  <section id="container-wrapper" class="d-flex flex-column align-items-center justify-content-center mt-5 w-7/12">
+    <div id="container" class="input-container w-100">
+      <input id="text-input" class="w-100 mt-5 p-0 opacity-40 fs-5" type="text" placeholder="Type /1 followed by text..." autofocus>
     </div>
   </section>
-</div>
+</section>
  <%= javascript_include_tag 'generator' %>
