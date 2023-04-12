@@ -1,0 +1,15 @@
+<!-- explanation and where the user can create header -->
+<div class="flex flex-col items-center justify-center mt-6">
+  <div class="w-7/12">
+    <header>
+      <h1 class="border-b-2 text-4xl font-extrabold pb-6">Front-end developer test project</h1>
+      <p class="mt-6 text-gray-600 font-medium">Your goal is to make a page that looks exactly this one, and has the ability to create H1 text simply by typing / then 1, then typing text, and hitting enter.</p>
+    </header>
+  </div>
+  <section id="container-wrapper" class="flex flex-col justify-center mt-6 w-7/12">
+    <div id="container" class="input-container w-full">
+      <input id="text-input" type="text" placeholder="Type /1 followed by text..." autofocus>
+    </div>
+  </section>
+</div>
+ <%= javascript_include_tag 'generator' %>
