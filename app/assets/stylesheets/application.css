@@ -4,23 +4,23 @@
   padding: 0;
 }
 
- .unlock-img {
-    width: 20px;
-    height: 20px;
- }
+.unlock-img {
+  width: 20px;
+  height: 20px;
+}
 
- .navbar-text {
-    color: #22543d;
-    background-color: #9ae6b4;
- }
+.navbar-text {
+  color: #22543d;
+  background-color: #9ae6b4;
+}
 
- .navbar-border {
-    border-color: #6c757d; 
- }
+.navbar-border {
+  border-color: #6c757d;
+}
 
- .main-txt {
-   color: #6B7280
- }
+.main-txt {
+  color: #6b7280;
+}
 
 select {
   background-image: none;
@@ -42,13 +42,13 @@ select:focus {
 
 h1 {
   font-size: 1.25rem;
-  font-weight: bold; 
+  font-weight: bold;
   width: 100%;
   margin-top: 1.25rem;
 }
 
 .paragraph {
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .text-img {
@@ -58,7 +58,7 @@ h1 {
 
 @media (min-width: 992px) {
   .navbar-collapse {
-    display:flex;
+    display: flex;
     justify-content: space-between;
   }
 }
