@@ -94,20 +94,30 @@ Clone this repository to your desired folder:
   git clone https://github.com/PNdunguMaina/notion_clone.git
 ```
 
-### Install
-
-Install this project with:
-
-```sh
-  cd notion_clone
-```
-
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
   docker-compose up --build
+```
+### Configure
+
+Navigate to this directory:
+
+```sh
+  cd notion_clone
+```
+Configure the database:
+```sh
+  Open database.yml file
+```
+```sh
+  -database: your database name
+  -username: your postgres user
+  -password: your postgres user password
+  -host: database container (notion_clone-db-1)
+  -port: your port(e.g 5432)
 ```
 
 ### Run on server
