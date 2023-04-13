@@ -15,6 +15,7 @@ const createHeader1Element = (header) => {
 const createParagraphElement = (text) => {
   const p = document.createElement('p');
   p.setAttribute('name', 'input');
+  p.setAttribute('class', 'w-100 fs-5');
   p.classList.add('paragraph');
   p.textContent = text;
   mainContainer.insertBefore(p, inputContainer);
