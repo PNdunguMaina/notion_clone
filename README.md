@@ -110,10 +110,6 @@ To run the project, execute the following command:
   docker-compose up --build
 ```
 
-```sh
-  docker-compose run rails db:migrate db:seed
-```
-
 ### Run on server
 
 You can run this project on live server on your local machine using:
