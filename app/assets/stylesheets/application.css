@@ -55,3 +55,10 @@ h1 {
   width: 3rem;
   height: 2.5rem;
 }
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display:flex;
+    justify-content: space-between;
+  }
+}
