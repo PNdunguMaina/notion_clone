@@ -15,6 +15,4 @@ test:
   database: notion_clone_test
 production:
   <<: *default
-  database: notion_clone_production
-  username: notion_clone
-  password: <%= ENV["NOTION_CLONE_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
